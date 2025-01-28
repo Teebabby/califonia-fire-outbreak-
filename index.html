@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Support Our Cause</h1>
+    </header>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#donate">Donate</a>
+      <a href="#course">California Fire Outbreak</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+      <h1>Make a Difference Today</h1>
+      <p>Your contribution can change lives. Join us in our mission.</p>
+      <a href="#donate">
+        <button class="donate-now">Donate Now</button>
+      </a>
+    </section>
+    <section id="about" class="content">
+      <h2>About Us</h2>
+      <p>
+        We are dedicated to making a positive impact in the lives of those in
+        need.
+      </p>
+    </section>
+    <section id="course" class="course">
+      <h2>California Fire Outbreak</h2>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiaCZhOuHYpPKcOXXTimPN2RCzbEcbU1VOYQ&s"
+        alt="California Fire Outbreak"
+      />
+      <p>
+        California is facing devastating wildfires, causing widespread
+        destruction and displacing thousands of families. Your support can help
+        provide immediate relief such as food, shelter, and medical care to
+        those affected.
+      </p>
+      <div class="progress-container">
+        <h3>Raised: $20,000 / $100,000</h3>
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+      <a href="#donate">
+        <button class="donate-now">Donate to This Cause</button>
+      </a>
+    </section>
+    <section id="donate" class="content">
+      <h2>Donate</h2>
+      <form class="donation-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name"   />
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+           
+        />
+
+        <label for="amount">Donation Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount"   />
+
+        <!-- PayPal Donate Button 
+        <div>
+          <form
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_blank"
+          >
+            <input
+              type="hidden"
+              name="business"
+              value="YOUR_PAYPAL_EMAIL@example.com"
+            />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input
+              type="hidden"
+              name="item_name"
+              value="California Fire Relief Fund"
+            />
+            <input type="hidden" name="amount" id="paypal-amount" value="" />
+            <button type="submit" class="paypal-button">
+              Donate with PayPal
+            </button>
+            -->
+          </form>
+        </div>
+      </form>
+      <br />
+      <!-- Cash App Donate Button 
+      <p>You can also donate via Cash App:</p>
+      <a
+        href="https://cash.app/$OmopremiumTh"
+        target="_blank"
+        class="cashapp-button"
+      >
+        Donate with Cash App
+      </a> -->
+     <!--Donate with crypto-->
+      <section id="crypto-donate" class="content">
+        <h2>Donate with Cryptocurrency</h2>
+        <!-- <p>
+          We accept Bitcoin, Ethereum, and more. Click the button below to get
+          started:
+        </p> -->
+        <button class="crypto-button" onclick="showCryptoModal()">
+          Donate with Crypto
+        </button>
+      </section>
+
+      <!-- Modal -->
+     <div id="crypto-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="hideCryptoModal()">&times;</span>
+    <h2>Donate with Cryptocurrency</h2>
+    <select id="crypto-select" onchange="updateCryptoInfo()">
+      <option value="btc">Bitcoin</option>
+      <option value="eth">Ethereum</option>
+    </select>
+    <p id="wallet-address"></p>
+    <button id="copy-button" onclick="copyAddress()">Copy Address</button>
+    <button onclick="hideCryptoModal()">Close</button>
+  </div>
+</div>
+
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 Your Organization. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
