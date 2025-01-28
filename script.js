@@ -5,8 +5,9 @@ document.getElementById("amount").addEventListener("input", function () {
 
 // Wallet addresses for crypto donations
 const walletAddresses = {
-  btc: "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
-  eth: "0x4E83362442B8d1bec281594cEa3050c8EB01311C",
+ btc: "bc1qqjwe0wdenwmnj25frxv3wedffkyuu4z08l7tvj",
+  eth: "0x10E1CdeC53B5B4B218CCc3db9Ea490be4A5d7BD6",
+  usdt: "TYJZC75sRV62DNi596ckJivcHAGrw6wa5D",
 };
 // Show the modal for crypto donations
 function showCryptoModal() {
